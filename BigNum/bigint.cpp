@@ -26,6 +26,7 @@ void BigInt::divide_by_2(BigInt& num){
 	while(num.digits.size() > 1 && !num.digits.back()) {
 		num.digits.pop_back();
     }
+    return;
 }
 
 BigInt& BigInt::operator*=(const BigInt &other) const{

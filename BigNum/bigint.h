@@ -55,8 +55,6 @@ public:
     void shift_right() {
     }
 
-
-
 private:
     std::vector<u_long> digits;  // storage digits from lowest to biggest
     u_long base;  // base of this number
