@@ -22,25 +22,28 @@ public:
     BigInt(std::vector<u_long>&, u_long) {
     }
 
-    BigInt& operator+=(const BigInt&) const {
+    BigInt& operator+=(BigInt&) {
     }
 
-    BigInt operator+(const BigInt&) const {
+    BigInt operator+(BigInt&) const {
     }
 
-    BigInt& operator-=(const BigInt&) const {
+    BigInt& operator-=(BigInt&) {
     }
 
-    BigInt operator-(const BigInt&) const {
+    BigInt operator-() {
     }
 
-    BigInt& operator*=(const BigInt&) const {
+    BigInt operator-(BigInt&) const {
+    }
+
+    BigInt& operator*=(const BigInt&) {
     }
 
     BigInt operator*(const BigInt&) const {
     }
 
-    BigInt& operator/=(const BigInt&) const {
+    BigInt& operator/=(const BigInt&) {
     }
 
     BigInt operator/(const BigInt&) const {
@@ -53,6 +56,12 @@ public:
     }
 
     void shift_right() {
+    }
+
+    size_t getSize() const {
+    }
+
+    bool getSign() const {
     }
 
 private:
